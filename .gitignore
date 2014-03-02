@@ -1,2 +1,8 @@
 bin
 gen
+*.swp
+*.o
+*.d
+*.pc
+output
+tmpdir
