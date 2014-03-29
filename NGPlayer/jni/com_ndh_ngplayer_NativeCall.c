@@ -4,19 +4,23 @@ extern "C" {
 
 #include <stdio.h>
 #include <string.h>
+#include <stddef.h>
+
 #include <android/log.h>
 #include "com_ndh_ngplayer_NativeCall.h"
 
-#include "libavcodec/avcodec.h"
-#include "libavformat/avformat.h"
-#include "libavutil/avutil.h"
+//#include "libavcodec/avcodec.h"
+//#include "libavformat/avformat.h"
+//#include "libavutil/avutil.h"
 
 #ifdef __cplusplus
 }
 #endif
 
+#define NULL 0
+
 const char * const TAG = "NativeCall";
-AVFormatContext *gFormatCtx = NULL;
+//AVFormatContext *gFormatCtx = NULL;
 char *gVideoFileName = NULL;
 
 
@@ -33,6 +37,6 @@ JNIEXPORT jstring JNICALL Java_com_ndh_ngplayer_NativeCall_sprintf(JNIEnv *env, 
 
 	char* str = (char*) malloc(256);
 	memset(str, 0, 0);
-	sprintf(str, "version: %d", avutil_version());
+//	sprintf(str, "version: %d", avutil_version());
 	return (*env)->NewStringUTF(env, str);
 }
