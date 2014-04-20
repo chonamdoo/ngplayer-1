@@ -1,8 +1,20 @@
+# output directory for android
 bin
 gen
+obj
+
+# temporary file for vi
 *.swp
+
+# output files for general library
 *.o
 *.d
 *.pc
+*.a
+
+# ffmpeg
 output
 tmpdir
+
+NGPlayer/jni/ffmpeg/ffmpeg
+NGPlayer/jni/ffmpeg/ffmpeg_g

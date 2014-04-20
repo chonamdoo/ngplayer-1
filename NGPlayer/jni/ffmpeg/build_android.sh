@@ -40,12 +40,12 @@ fi
  --disable-ffprobe \
  --disable-ffserver \
  --enable-avdevice \
- --enable-devices \
  --enable-filters \
  --disable-yasm \
  --enable-network \
  --enable-protocol=tcp \
  --enable-demuxer=rtsp \
  --enable-decoder=h264
+# --enable-devices \
 
  make clean && make && make install
