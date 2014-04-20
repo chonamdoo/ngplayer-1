@@ -24,7 +24,7 @@ else
 	rm -rf $TMPDIR/*
 fi
 
- ./configure --prefix=$PREFIX \
+./configure --prefix=$PREFIX \
  --disable-shared \
  --enable-static \
  --target-os=linux \
@@ -35,13 +35,13 @@ fi
  --extra-cflags="-marm -march=armv7-a -mfloat-abi=softfp -mfpu=neon" \
  --extra-ldflags="-Wl,--fix-cortex-a8" \
  --disable-doc \
- --disable-ffmpeg \
+ --enable-ffmpeg \
  --disable-ffplay \
  --disable-ffprobe \
  --disable-ffserver \
- --disable-avdevice \
- --disable-devices \
- --disable-filters \
+ --enable-avdevice \
+ --enable-devices \
+ --enable-filters \
  --disable-yasm \
  --enable-network \
  --enable-protocol=tcp \
