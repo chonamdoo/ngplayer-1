@@ -1,9 +1,0 @@
-LOCAL_FFMPEG_PATH=${LOCAL_PATH}/ffmpeg
-LIB_PATH="${LOCAL_FFMPEG_PATH}/output/lib"
-INCLUDE_PATH="${LOCAL_FFMPEG_PATH}/output/include"
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := ffmpeg
-LOCAL_C_INCLUDES := $(INCLUDE_PATH)
-LOCAL_STATIC_LIBRARIES := ${LIB_PATH}/libavformat ${LIB_PATH}/libavcodec ${LIB_PATH}/libavutil ${LIB_PATH}/libswscale
-include $(BUILD_SHARED_LIBRARY)

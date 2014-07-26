@@ -2,6 +2,8 @@
 bin
 gen
 obj
+libs/armeabi
+libs/armeabi-v7a
 
 # temporary file for vi
 *.swp
