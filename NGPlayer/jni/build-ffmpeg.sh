@@ -4,7 +4,7 @@ NDK=$ANDROID_NDK_ROOT
 OS=`uname -s | tr '[A-Z]' '[a-z]'`
 PREBUILT=$NDK/toolchains/arm-linux-androideabi-4.6/prebuilt/$OS-x86_64
 PLATFORM=$NDK/platforms/android-14/arch-arm
-PREFIX_BASE=../ffmpeg-build
+PREFIX_BASE=./ffmpeg-build
 
 function build_one
 {

@@ -90,7 +90,7 @@ public class VideoSurfaceView extends SurfaceView implements MediaPlayerControl 
 
     static {
     	System.loadLibrary("ffmpeg");
-        System.loadLibrary("media_api");
+        System.loadLibrary("player");
     }
 
     public native int nativeMediaInit(String fileName);
